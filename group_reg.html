@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+function payvisit()
+{
+	if(document.f1.pay[1].checked )
+	{
+			alert("Amount cannot be entered!!");
+			document.f1.pay[0].focus();
+        	return false;
+	}
+	return true;
+}
+</script>
+<link href="group_reg.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+<!--
+.style1 {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.style2 {
+	color: #660033;
+	font-weight: bold;
+}
+.style4 {color: #660033}
+.style6 {
+	font-weight: bold;
+	color: #CC0000;
+}
+.style7 {font-weight: bold}
+.style9 {font-weight: bold}
+.style10 {color: #008F95}
+-->
+</style>
+</head>
+
+<body bgcolor="#EFEFEF">
+<form name="f1">
+<div id="main">
+	<div id="top">
+		<center>
+		<h1 class="style1"><font face="Algerian" size="5">:Registration form:</font></h1>
+		</center>
+	</div><!--End of top-->
+	<div id="group">
+		<center>
+			<h3 class="style18 style10"><font face="Times new roman" size="4">~WORKER GROUP INFORMATION~</font></h3>
+		</center>
+	</div><!--End of group-->
+  <div id="wginfo">
+    <label><span class="style2">GROUP NAME:</span>
+    <input name="gnme" type="text" id="gnme" />
+</label>
+    <p>
+      <label></label>
+      <label><span class="style2">GROUP LOGO:
+      </span>
+      <input type="file" name="pic" accept="image/*">
+      </label>
+    </p>
+   <p>
+        <label><span class="style16 style4"><strong>LANGUAGE PREFERENCE1:</strong></span>
+        <input name="lng1" type="text" id="lng1" />
+        </label>
+      </p>
+	      <p>	
+	        <label><span class="style2">LANGUAGE PREFERENCE2:
+	        </span>
+	        <input type="lng2" name="lng2" />
+	        </label>
+	      </p>
+		  <p>
+		  <label>
+      <span class="style3 style4"><strong>DEFAULT PAY-VISIT:</strong></span>
+      <input name="pay" type="radio" value="radiobutton" /> 
+      Yes</label>
+	  <label>
+	  <input name="pay" type="radio" value="radiobutton" />
+	  No</label></p>
+	  <p>
+	    <label><span class="style6">	Amount:</span>
+	    <input name="amt" type="text" id="amt" onFocus="return payvisit();"/>
+	    </label>
+	  </p>
+	  <p>
+	    <span class="style5">
+	    <label><span class="style16 style4"><strong>SKILL:</strong></span>
+	    <select name="select" onfocus="return check();" >
+          <option value="">Choose any:</option>
+          <option value="fd">Food Production</option>
+          <option value="drv">Driving</option>
+        </select>
+	    </label>
+      </span>	  </p>
+	  <p>
+	    <label><span class="style4"><strong>EXPERIENCE(in years):</strong></span>
+	    <input name="exp" type="text" id="exp" />
+	    </label>
+	  </p>
+	  <p>
+	    <span class="style5">
+	    <label><span class="style16 style4"><strong>DAILY PAY-SCALE:</strong></span>
+	    <input name="daily" type="text" id="daily" onFocus="return check();"/>
+	    </label>
+      </span>	  </p>
+	  <p>
+	    <span class="style7">
+	    <label><span class="style16 style4">MONTHLY PAY-SCALE:</span><span class="style9">
+	    <input name="mnthly" type="text" id="mnthly" onfocus="return check();"/>
+	    </span></label>
+      </span>	  </p>
+	  <p>
+	    <span class="style5">
+	    <label><span class="style16 style4"><strong>HOURLY PAY-SCALE:</strong></span>
+	    <input name="hrly" type="text" id="hrly" onFocus="return check();" />
+	    </label>
+      </span>	  </p>
+	  <p>
+        <label><span class="style3 style4"><strong>DATE OF CONSTITUTION:</strong></span>
+        <input name="doc" type="date" id="doc" />
+        <br />
+        <br />
+        <br />
+        <br />
+		<center>
+        <input type="submit" name="Submit" value="Submit" /></center>
+        </label>
+      </p>
+  </div>
+  <!--End of wginfo-->
+  </div><!--End of main-->
+   </form>
+</body>
+</html>

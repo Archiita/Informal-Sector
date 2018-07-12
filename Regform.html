@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+/*function check()
+{
+	var data=document.f1.prsn.options[document.f1.prsn.selectedIndex].value;
+                if(data=="")
+	{
+		alert("Worker");
+		document.f1.prsn.focus();
+        return false;
+	}
+return true;
+}*/
+/*function nme_blank()
+{
+	var data=document.f1.nme.value;
+
+                if(data=="")
+	{
+		alert("Name not entered!!");
+		document.getElementById("nme").disabled = true;
+		document.f1.nme.focus();
+        return false;
+	}
+return true;
+}*/
+function check()
+{
+	var data=document.f1.prsn.options[document.f1.prsn.selectedIndex].value;
+	if(data=="Employee")
+	{
+		alert("Employee selected!!");
+	
+		document.f1.prsn.focus();
+        return false;
+	}
+return true;
+}
+
+function amount()
+{
+	  var data=document.f1.prsn.options[document.f1.prsn.selectedIndex].value;
+	  if(data=="Employee")
+	  {
+		alert("Employee selected!!");
+	
+		document.f1.prsn.focus();
+        return false;
+	  }
+	  else
+	  {
+	   if(document.f1.pay[1].checked )
+	   {
+			alert("Amount cannot be entered!!");
+			document.f1.pay[0].focus();
+        	return false;
+	   }
+	   return true;
+	  }
+return true;
+	  
+}
+
+</script>
+<link href="Regform.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style3 {
+	color: #660033;
+	font-weight: bold;
+}
+.style4 {color: #CC3300; font-weight: bold; }
+.style5 {
+	color: #660099;
+	font-weight: bold;
+}
+.style6 {
+	color: #CC0000;
+	font-weight: bold;
+}
+.style7 {
+	font-weight: bold;
+	color: #660066;
+}
+.style9 {color: #
+	color: #000000;
+	color: #FFFFFF;
+}
+.style10 {color: #660033; }
+.style16 {color: #660033}
+.style17 {color: #CC0000}
+.style18 {color: #008F95; }
+-->
+</style>
+</head>
+<body bgcolor="#EFEFEF">
+<form name="f1">
+<div id="main">
+	<div id="top">
+		<center>
+			<h1 class="style1 style9"><font face="Algerian" size="5">:Registration form:</font></h1>
+		</center>
+	</div><!--End of top-->
+	<div id="personal">
+		<center>
+			<h3 class="style18"><font face="Times new roman" size="4">~PERSONAL INFORMATION~</font></h3>
+		</center>
+	</div><!--End of personal-->
+  <div id="pinfo">
+		  <label><span class="style3">NAME:
+	  </span>
+	  <input name="nme" type="text" id="nme" />
+	  </label>
+	      <p>
+	        <label><span class="style3">GENDER:</span> </label>
+	        <span class="style10">
+	        <label>	        </label>
+	        </span>
+	        <span class="style16">
+	        <label>	        </label>
+	        </span>
+	        <label>
+	        <select name="gndr" id="gndr" onFocus="return nme_blank();">
+				<option value="">Choose one:</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+		    </label>
+	      </p>
+	      <p>
+	        <label><span class="style16"><strong>LANGUAGE PREFERENCE1:</strong></span>
+	        <input name="lng1" type="text" id="lng1" />
+</label>
+	      </p>
+	      <p>	
+	        <label><span class="style3">LANGUAGE PREFERENCE2:
+	        </span>
+	        <input type="lng2" name="lng2" />
+	        </label>
+	      </p>
+		  
+	      <p>
+	        <label><span class="style3">IMAGE:</span>
+	        <input type="file" name="fileupload" value="fileupload" id="fileupload">
+	        </label>
+	      </p>
+	      <p>
+	        <span class="style3">
+	        <label>PERSON TYPE:
+	        <select name="prsn">
+              <option value="">Choose one:</option>
+              <option value="Worker">Worker</option>
+              <option value="Employee">Employee</option>
+            </select>
+</label>
+          </span>	      </p>
+          <p class="style3">ADDRESS:</p>
+          <p class="style4"><span class="style17">Postal code:</span> 
+            <label>
+            <input name="pcode" type="text" id="pcode" />
+            </label>
+      </p>
+          <p class="style4">
+            <label><span class="style17">Building Name:</span>
+            <input name="bnme" type="text" id="bnme" />
+            </label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">Landmark:
+            </span>
+            <input name="lndmrk" type="text" id="lndmrk" />
+            </label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">Street:
+            </span>
+            <input name="street" type="text" id="street" />
+            </label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">City:</span>
+            <input name="city" type="text" id="city" />
+</label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">State:</span>
+            <input name="state" type="text" id="state" />
+</label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">Country: </span>
+            <input name="cntry" type="text" id="cntry" />
+</label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">Email ID:</span>
+            <input name="mail" type="text" id="mail" />
+            </label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">Fax:</span>
+            <input name="fax" type="text" id="fax" />
+            </label>
+          </p>
+          <p class="style4">
+            <label><span class="style17">Mobile:</span>
+            <input name="mob" type="text" id="mob" />
+            </label>
+          </p>
+  </div>
+  <!--End of pinfo-->
+  
+  
+  <div id="wage">
+		<center>
+			<h3 class="style18"><font face="Times new roman" size="4">~WAGE INFORMATION~</font></h3>
+		</center>
+  </div><!--End of wage-->
+	<div id="winfo">
+	  <label>
+      <span class="style3">DEFAULT PAY-VISIT:</span>
+<input name="pay" type="radio" value="radiobutton" onFocus="return check();"/> 
+Yes</label>
+	  <label>
+	  <input name="pay" type="radio" value="radiobutton"  onFocus="return check();"/>
+	  No</label>
+	  <p>
+	    <label><span class="style6">	Amount:</span>
+	    <input name="amt" type="text" id="amt" onFocus="return amount();"/>
+	    </label>
+	  </p>
+	  <p>
+	    <label><span class="style3">EXPERIENCE(in years):</span>
+	    <input name="exp" type="text" id="exp" onFocus="return check();"/>
+	    </label>
+	  </p>
+	  <p>
+	    <span class="style5">
+	    <label><span class="style16">SKILL:</span>
+	    <select name="select" onFocus="return check();" >
+			<option value="">Choose any:</option>
+			<option value="fd">Food Production</option>
+           	<option value="drv">Driving</option>
+        </select>
+	    </label>
+      </span>	  </p>
+	  <p>
+	    <span class="style5">
+	    <label><span class="style16">DAILY PAY-SCALE:</span>
+	    <input name="daily" type="text" id="daily" onFocus="return check();"/>
+	    </label>
+      </span>	  </p>
+	  <p>
+	    <span class="style7">
+	    <label><span class="style16">MONTHLY PAY-SCALE:</span>
+	    <input name="mnthly" type="text" id="mnthly" onFocus="return check();"/>
+	    </label>
+      </span>	  </p>
+	  <p>
+	    <span class="style5">
+	    <label><span class="style16">HOURLY PAY-SCALE:</span>
+	    <input name="hrly" type="text" id="hrly" onFocus="return check();" />
+	    </label>
+      </span>	  </p>
+	  <p><strong><span class="style16">ARE YOU A PART OF A GROUP? 
+	        <label>            </label>
+	  </span>
+	    <label>
+        <span class="style17">
+<input name="grp" type="radio" value="radiobutton" onfocus="return check();"/> 
+Yes</span></label>
+        <span class="style17">
+        <label></label>
+        <input name="grp" type="radio" value="radiobutton"  onfocus="return check();"/>
+        <label>	  No</label>
+	    </span></strong></p>
+	  <span class="style6">Name of the group:</span>
+	  <label>
+	  <input name="gnme" type="text" id="gnme" />
+	  </label>
+	  <p>
+	    <label>
+		<center>
+	    <input type="submit" name="Submit" value="Submit" />
+		</center>
+	    </label>
+	  </p>
+	</div><!--End of winfo-->
+  </div><!--End of main-->
+</form>
+</body>
+</html>

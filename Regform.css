@@ -1,0 +1,42 @@
+/* CSS Document */
+#main
+{
+	width:1320px;
+    height:1150px;
+    margin:3px;
+}
+#top
+{
+	width:1320px;
+    height:50px;
+    margin:3px;
+	background-color:#DF744A;
+}
+#personal
+{
+	width:1320px;
+    height:20px;
+    margin:3px;
+	background-color:#BFD8D2;
+}
+#pinfo
+{
+	width:1320px;
+    height:650px;
+    margin:3px;
+	background-color:#FEDCD2;
+}
+#wage
+{
+	width:1320px;
+    height:20px;
+    margin:3px;
+	background-color:#BFD8D2;
+}
+#winfo
+{
+	width:1320px;
+    height:320px;
+    margin:3px;
+	background-color:#FEDCD2;
+}
